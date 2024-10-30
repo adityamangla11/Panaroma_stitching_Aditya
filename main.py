@@ -12,7 +12,7 @@ import cv2
 path = 'Images{}*'.format(os.sep)  # Use os.sep, Windows, linux have different path delimiters
 ###
 
-all_submissions = glob.glob('./src/*')
+all_submissions = glob.glob('/src/*')
 os.makedirs('./results/', exist_ok=True)
 for idx,algo in enumerate(all_submissions):
     print('****************\tRunning Awesome Stitcher developed by: {}  | {} of {}\t********************'.format(algo.split(os.sep)[-1],idx,len(all_submissions)))
